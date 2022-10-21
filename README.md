@@ -2,6 +2,8 @@
 
 The Twilio Message Plugin offers a way to interact with the Message API from Medusa events.
 
+![cover image with stars and colored shading in the background as well as foreground text MEDUSA HACKATHON SUBMISSION Twilio Message Plugin](https://user-images.githubusercontent.com/116348315/197195527-6768341b-f51f-4f17-bdce-aa36bee253ed.png)
+
 ## Installation
  - install & setup medusajs/medusa
  - clone this repo
