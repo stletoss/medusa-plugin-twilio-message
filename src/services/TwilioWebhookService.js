@@ -1,10 +1,11 @@
 import { BaseService } from "medusa-interfaces";
 
 class TwilioWebhookService extends BaseService {
-	constructor({ orderService }) {
+	constructor({ orderService }, options) {
 		super();
 		
 		this.orderService_ = orderService;
+		this.options_ = options;
 	}
 	
 	async handleOrder(orderId) {
@@ -18,6 +19,8 @@ class TwilioWebhookService extends BaseService {
 				"discounts.rule",
 			]
 		});
+		const discount_percentage = order_discount_total / order_total;
+		const over_threshold = discount_percentage > this.options_.ORDER_DISCOUNT_THRESHOLD);
 	}
 }
 
