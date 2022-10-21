@@ -1,6 +1,6 @@
 import { BaseService } from "medusa-interfaces";
 
-class TwilioMessageAPIService extends BaseService {
+class TwilioMessageService extends BaseService {
 	/**
 	* @param {Object} options - options defined in `medusa-config.js`
 	*    {
@@ -32,4 +32,4 @@ class TwilioMessageAPIService extends BaseService {
 	}
 }
 
-export default TwilioMessageAPIService;
+export default TwilioMessageService;
