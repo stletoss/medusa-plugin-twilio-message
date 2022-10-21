@@ -1,6 +1,6 @@
-# Medusa Twilio Message API Plugin
+# Medusa Twilio Message Plugin
 
-The Twilio Message API Plugin offers a way to interact with the Twilio Message API from Medusa events.
+The Twilio Message Plugin offers a way to interact with the Message API from Medusa events.
 
 
 ## Config
