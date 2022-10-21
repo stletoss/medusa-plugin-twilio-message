@@ -1,6 +1,12 @@
 import { BaseService } from "medusa-interfaces";
 
 class TwilioWebhookService extends BaseService {
+	/**
+	* @param {Object} options - options defined in `medusa-config.js`
+	*    {
+	*      ORDER_DISCOUNT_THRESHOLD: double with threshold percentage
+	*    }
+	*/
 	constructor({ orderService }, options) {
 		super();
 		
