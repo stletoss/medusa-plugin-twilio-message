@@ -2,6 +2,13 @@
 
 The Twilio Message Plugin offers a way to interact with the Message API from Medusa events.
 
+## Installation
+ - install & setup medusajs/medusa
+ - clone this repo
+ - link with your package manager, [see the docs](https://docs.medusajs.com/advanced/backend/plugins/create/#test-your-plugin)
+ - register/login at twilo, get your account sid & auth token
+ - edit config (see below)
+ - run & have fun
 
 ## Config
 Follwowing changes must be made your medusa-config.js:
