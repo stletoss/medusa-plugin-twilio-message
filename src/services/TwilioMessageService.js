@@ -8,6 +8,7 @@ class TwilioMessageService extends BaseService {
 	*       ORDER_DISCOUNT_THRESHOLD: double with threshold percentage
 	*       TWILIO_ACCOUNT_SID: twilio account sid
 	*       TWILIO_AUTH_TOKEN: twilio auth token
+	*	SENDER_N_RECIPIENT: your verified phone number
 	*    }
 	*/
 	constructor({ orderService }, options) {
