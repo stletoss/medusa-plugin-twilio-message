@@ -1,15 +1,17 @@
-# Medusa Twilio WebHook Plugin
+# Medusa Twilio Message API Plugin
 
-The Twilio WebHook Plugin offers a way to interact with a Twilio WebHook from Medusa events.
+The Twilio Message API Plugin offers a way to interact with the Twilio Message API from Medusa events.
 
 
 ## Config
 Follwowing changes must be made your medusa-config.js:
 ```js
 {
-	resolve: `medusa-plugin-twilio-webhook`,
+	resolve: `medusa-plugin-twilio-message-api`,
 	options: {
 		ORDER_DISCOUNT_THRESHOLD: `<double>`, //threshold from 0.0 to 1.0
+		TWILIO_ACCOUNT_SID: `ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`, // Find your Account SID at twilio.com/console
+		TWILIO_AUTH_TOKEN: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb` // Find your Auth Token at twilio.com/console
 	}
 }
 ```
