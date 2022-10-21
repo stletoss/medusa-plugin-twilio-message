@@ -1,10 +1,12 @@
 import { BaseService } from "medusa-interfaces";
 
-class TwilioWebhookService extends BaseService {
+class TwilioMessageAPIService extends BaseService {
 	/**
 	* @param {Object} options - options defined in `medusa-config.js`
 	*    {
-	*      ORDER_DISCOUNT_THRESHOLD: double with threshold percentage
+	*       ORDER_DISCOUNT_THRESHOLD: double with threshold percentage
+	*       TWILIO_ACCOUNT_SID: twilio account sid
+	*       TWILIO_AUTH_TOKEN: twilio auth token
 	*    }
 	*/
 	constructor({ orderService }, options) {
@@ -30,4 +32,4 @@ class TwilioWebhookService extends BaseService {
 	}
 }
 
-export default TwilioWebhookService;
+export default TwilioMessageAPIService;
