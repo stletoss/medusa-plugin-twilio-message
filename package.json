@@ -1,7 +1,7 @@
 {
-  "name": "medusa-plugin-template",
+  "name": "medusa-plugin-twilio-message",
   "version": "0.0.1",
-  "description": "A template for building plugins for Medusa",
+  "description": "A plugin to integrate Twilio Message API with Medusa",
   "author": "olivermrbl",
   "license": "MIT",
   "scripts": {
@@ -13,15 +13,17 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "medusa-core-utils": "^1.1.30"
+    "medusa-core-utils": "^1.1.30",
+    "twilio": "^3.83.0"
   },
   "peerDependencies": {
     "medusa-interfaces": "1.x"
   },
-  "repository": "https://github.com/medusajs/medusa-plugin-template.git",
+  "repository": "https://github.com/stletoss/medusa-plugin-twilio-message.git",
   "keywords": [
     "medusa",
-    "medusa-plugin"
+    "medusa-plugin",
+    "twilio"
   ],
   "devDependencies": {
     "@babel/cli": "^7.7.5",
