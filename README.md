@@ -17,7 +17,7 @@ N/A
 ## Description
 Integrate Twilio with Medusa, to notify per SMS when the discount applied is over the threshold.
 
-## Setup/Installation
+## Prerequisites/Setup/Installation
  - install & setup medusajs/medusa
  - clone this repo
  - link with your package manager, [see the docs](https://docs.medusajs.com/advanced/backend/plugins/create/#test-your-plugin)
@@ -39,3 +39,7 @@ Follwowing changes must be made your medusa-config.js:
 	}
 }
 ```
+
+## Resources
+ - [Twilio Message Docs](https://www.twilio.com/docs/sms/api/message-resource#create-a-message-resource)
+ - [Medusa Plugin Test](https://docs.medusajs.com/advanced/backend/plugins/create/#test-your-plugin)
