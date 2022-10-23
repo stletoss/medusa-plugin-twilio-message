@@ -24,8 +24,8 @@ Integrate Twilio with Medusa, to notify per SMS when the discount applied is ove
  - install & setup medusajs/medusa
  - clone this repo
  - link with your package manager, [see the docs](https://docs.medusajs.com/advanced/backend/plugins/create/#test-your-plugin)
- - register/login at twilo, get your account sid & auth token
- - verify your phone number to send message to yourself
+ - register/login at Twilio, get your Account SID & Auth Token
+ - verify your phone number with Twilio, to send message to yourself (as sender and receiver)
  - edit config (see below)
  - run & have fun
 
