@@ -37,8 +37,8 @@ Follwowing changes must be made your medusa-config.js:
 	options: {
 		ORDER_DISCOUNT_THRESHOLD: `<double>`, //threshold from 0.0 to 1.0
 		TWILIO_ACCOUNT_SID: `ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`, // Find your Account SID at twilio.com/console
-		TWILIO_AUTH_TOKEN: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb` // Find your Auth Token at twilio.com/console
-		SENDER_N_RECIPIENT: `+1999999999` //destination phone number in E.164 format
+		TWILIO_AUTH_TOKEN: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb`, // Find your Auth Token at twilio.com/console
+		SENDER_N_RECIPIENT: `+1999999999`, //destination phone number in E.164 format
 	}
 }
 ```
