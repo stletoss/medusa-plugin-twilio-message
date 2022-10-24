@@ -20,7 +20,8 @@ Integrate Twilio with Medusa, to notify per SMS when the discount applied is ove
 ## Preview
 ![Screenshot with SMS from +1999999999 with text "From Medusa: order #170945 with discount OVER threshold placed!"](https://user-images.githubusercontent.com/116348315/197383367-3318aa05-5854-4cce-a829-4e0b8a36c2b6.png)
 
-## Prerequisites/Setup/Installation
+## Prerequisites/Setup
+Steps to do (see commands below):
  - install & setup medusajs/medusa
  - clone this repo
  - link with your package manager, [see the docs](https://docs.medusajs.com/advanced/backend/plugins/create/#test-your-plugin)
@@ -28,6 +29,30 @@ Integrate Twilio with Medusa, to notify per SMS when the discount applied is ove
  - verify your phone number with Twilio, to send message to yourself (as sender and receiver)
  - edit config (see below)
  - run & have fun
+ 
+## Installation
+The following commands must be run one after each other:
+```
+> npx create-medusa-app
+   √ Where should your project be installed? · my-medusa-store
+   √ Which Medusa starter would you like to install? · medusa-starter-default
+   √ Which storefront starter would you like to install? · Gatsby Starter (Simple)
+> cd my-medusa-store/backend
+> npm install
+> cd plugins
+> git clone https://github.com/stletoss/medusa-plugin-twilio-message.git
+> cd medusa-plugin-twilio-message
+> npm install
+> npm run build
+> npm dedupe
+> npm link
+> cd ../..
+```
+then edit the plugins section in `medusa-config.js` (as seen below) and finally
+```
+> npm run build
+> npm run start
+```
 
 ## Config
 Follwowing changes must be made your medusa-config.js:
