@@ -46,3 +46,4 @@ Follwowing changes must be made your medusa-config.js:
 ## Resources
  - [Twilio Message Docs](https://www.twilio.com/docs/sms/api/message-resource#create-a-message-resource)
  - [Medusa Plugin Test](https://docs.medusajs.com/advanced/backend/plugins/create/#test-your-plugin)
+ - inspired by [Parajulibkrm](https://github.com/Parajulibkrm/medusa-plugin-teams-notification) and [developerharsh](https://github.com/developerharsh/Iot-with-twilio-code)
