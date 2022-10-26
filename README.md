@@ -29,7 +29,7 @@ Steps to do (see commands below):
  - verify your phone number with Twilio, to send message to yourself (as sender and receiver)
  - edit config (see below)
  - run & have fun
- 
+
 ## Installation
 The following commands must be run one after each other:
 ```
@@ -48,24 +48,27 @@ The following commands must be run one after each other:
 > npm link
 > cd ../..
 ```
-then edit the plugins section in `medusa-config.js` (as seen below) and finally
+then edit the plugins const in `medusa-config.js` (as seen below) and finally
 ```
 > npm run build
 > npm run start
 ```
 
 ## Config
-Follwowing changes must be made your medusa-config.js:
+Follwowing changes must be made your `medusa-config.js`:
 ```js
-{
-	resolve: `medusa-plugin-twilio-message`,
+const plugins = [
+    ...,
+    {
+        resolve: `medusa-plugin-twilio-message`,
 	options: {
-		ORDER_DISCOUNT_THRESHOLD: `<double>`, //threshold from 0.0 to 1.0
-		TWILIO_ACCOUNT_SID: `ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`, // Find your Account SID at twilio.com/console
-		TWILIO_AUTH_TOKEN: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb`, // Find your Auth Token at twilio.com/console
-		SENDER_N_RECIPIENT: `+1999999999`, //destination phone number in E.164 format
-	}
-}
+	    ORDER_DISCOUNT_THRESHOLD: `<double>`, //threshold from 0.0 to 1.0
+	    TWILIO_ACCOUNT_SID: `ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`, // Find your Account SID at twilio.com/console
+	    TWILIO_AUTH_TOKEN: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb`, // Find your Auth Token at twilio.com/console
+	    SENDER_N_RECIPIENT: `+1999999999`, //destination phone number in E.164 format
+    },
+    ...
+];
 ```
 
 ## Resources
