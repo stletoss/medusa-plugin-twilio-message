@@ -15,10 +15,10 @@ N/A
  - [@binallll](https://github.com/binallll)
 
 ## Description
-Integrate Twilio with Medusa, to notify per SMS when the discount applied is over the threshold.
+Integrate Twilio with Medusa, to notify per SMS when the discount applied is OVER the configured threshold.
 
 ## Preview
-![Screenshot with SMS from +1999999999 with text "From Medusa: order #170945 with discount OVER threshold placed!"](https://user-images.githubusercontent.com/116348315/197383367-3318aa05-5854-4cce-a829-4e0b8a36c2b6.png)
+![Screenshot with SMS from +1999999999 with text "From Medusa: order #178856 with discount OVER threshold placed!"](https://user-images.githubusercontent.com/116348315/197383367-3318aa05-5854-4cce-a829-4e0b8a36c2b6.png)
 
 ## Prerequisites/Setup
 Steps to do (see commands below):
